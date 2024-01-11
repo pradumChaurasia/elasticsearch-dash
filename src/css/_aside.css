@@ -1,0 +1,113 @@
+.aside {
+    width: 230px;
+    left: -60px;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+    height: 100vh;
+    background-color: #1F2937;
+    transition: all 0.3s;
+    @media (min-width: 768px) {
+      left: 0;
+    }
+  }
+  
+  .aside-tools {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    background-color: #111827;
+    color: white;
+    flex: 1;
+    padding: 0.25rem;
+    height: 3rem;
+    align-items: center;
+  }
+  
+  .aside-mobile-expanded .aside {
+    left: 0;
+  }
+  
+  .aside-mobile-expanded .navbar {
+    margin-left: 60px;
+  }
+  
+  .aside-mobile-expanded #app {
+    margin-left: 60px;
+  }
+  
+  .aside-mobile-expanded,
+  .aside-mobile-expanded body {
+    overflow: hidden;
+    @media (min-width: 768px) {
+      overflow: visible;
+    }
+  }
+  
+  .menu-label {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    list-style: none;
+  }
+  
+  .menu li {
+    list-style: none;
+    align-items: start;
+  }
+
+  
+
+  .menu-list li a {
+    padding: 0.5rem 1rem;
+    display: flex;
+    color: #b3b3b3;
+    align-items: start;
+    list-style: none;
+    color: #fff;
+
+  }
+
+  .menu-list li a .icon path {
+    fill: white; 
+}
+  
+  .menu-list li > a:hover {
+    background-color: #4a4a4a;
+  }
+  
+  .menu-list li a .menu-item-label {
+    /* flex-grow: 1; */
+    list-style: none;
+  }
+  
+  .menu-list li a .icon {
+    width: 3rem;
+    flex: none;
+    list-style: none;
+    color: #fff;
+  }
+  
+  .menu-list li.active > a {
+    background-color: #4a4a4a;
+  }
+  
+  .menu-list li ul {
+    display: none;
+    list-style: none;
+  }
+  
+  .menu-list li ul a {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    color: #b3b3b3;
+    list-style: none;
+  }
+  
+  .menu-list li.active ul {
+    display: block;
+    background-color: #666;
+    list-style: none;
+  }
+  

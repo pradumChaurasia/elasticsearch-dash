@@ -1,0 +1,52 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+    padding-top: 3.5rem;
+    @media (min-width: 768px) {
+      padding-left: 60px;
+    }
+  }
+  
+  #app {
+    width: 100vw;
+
+    transition: all 0.3s;
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+  
+  .main-section {
+    padding: 1.5rem;
+    left: 200px;
+  }
+  
+  .dropdown {
+    cursor: pointer;
+  }
+  
+  .clipped,
+  .clipped body {
+    overflow: hidden;
+  }
+  
+  .m-clipped,
+  .m-clipped body {
+    overflow: hidden;
+    @media (min-width: 768px) {
+      overflow: visible;
+    }
+  }
+  
+  .form-screen body {
+    padding: 0;
+  }
+  
+  .form-screen .main-section {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  

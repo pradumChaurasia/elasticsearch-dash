@@ -1,0 +1,23 @@
+.notification {
+  padding: 1.5rem 0.75rem; /* px-3 py-6 */
+  border-radius: 0.375rem; /* rounded */
+}
+
+.notification:not(:last-child) {
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.notification.blue {
+  background-color: #3498db; /* bg-blue-500 */
+  color: #fff; /* text-white */
+}
+
+.notification.green {
+  background-color: #4caf50; /* bg-green-500 */
+  color: #fff; /* text-white */
+}
+
+.notification.red {
+  background-color: #e74c3c; /* bg-red-500 */
+  color: #fff; /* text-white */
+}
